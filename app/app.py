@@ -1,6 +1,6 @@
 # importing flask module in the project in mandatory
 # An object of Flask is our WSGI application
-from flask import Flask
+from flask import Flask, render_template
 
 # flask constructor takes the name of
 # current module (__name__) as argument
@@ -19,7 +19,7 @@ def hello_world():
   return 'Hello world'
 
 # main driver function
-if __name__ == '__main':
+if __name__ == '__main__':
 
   # run() method of Flask class runs the application
   # on the local development server.

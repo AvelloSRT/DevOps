@@ -1,0 +1,15 @@
+How to start application with docker
+    Start docker
+    Run in PowerShell
+        - cd (path of file\DevOps)
+        - pip install requirements.txt
+        - docker build -t flask-app .
+        - docker run -d -p 5000:5000 flask-app || docker run -it flask-app
+
+    in browser
+        - localhost:5000 || 127.0.0.1:5000
+
+Additional PowerShell commands
+    - docker ps -> shows running containers
+    - docker ps -a -> shows all containers
+    - docker stop <id> -> zatrzymuje kontener
