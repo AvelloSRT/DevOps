@@ -7,7 +7,8 @@ How to start application with docker
         - docker run -d -p 5000:5000 flask-app || docker run -it flask-app
 
     in browser
-        - localhost:5000 || 127.0.0.1:5000
+        - localhost:5000/
+        - localhost:5000/hello/"name" -> additional function
 
 Additional PowerShell commands
     - docker ps -> shows running containers

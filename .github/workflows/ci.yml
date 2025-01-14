@@ -26,5 +26,8 @@ jobs:
     - name: Build Docker image
       run: docker build -t flask-app .
 
+    - name: Start Docker container
+      run: docker run -d -p 5000:5000 flask-app
+
     - name: Test step
       run: echo "Test"
